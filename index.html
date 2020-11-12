@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="./public/stylesheets/style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>IH Characters</title>
+
 </head>
 <body>
+
   <section class="container">
     <h1>Ironhack Characters API</h1>
     <div class="characters-container">
@@ -19,74 +21,92 @@
         <div class="weapon">Character Weapon</div>
       </div>
     </div>
+
     <section class="operations">
       <div class="operation">
         <button id="fetch-all">Fetch all</button>
       </div>
+
       <div class="operation">
         <label for="character-id">Search by ID: </label>
-        <input type="text" name="character-id">
+        <input type="text" id="getone" name="character-id">
         <button id="fetch-one">Fetch one</button>
       </div>
+
       <div class="operation delete">
         <label for="character-id-delete">Delete by ID: </label>
-        <input type="text" name="character-id-delete">
+        <input type="text" id="deleteone" name="character-id-delete">
         <button id="delete-one">Delete one</button>
       </div>
 
     </section>
   </section>
+
+  <!-- FORM TÁ AQUI -->
   <section class="container">
     <section class="form-container">
       <h2>New Character</h2>
       <form id="new-character-form" class="character-form">
         <div class="field">
           <label for="name">Name: </label>
-          <input type="text" name="name">
+          <input type="text" id="new-name" name="name">
         </div>
+
         <div class="field">
           <label for="occupation">Occupation: </label>
-          <input type="text" name="occupation">
+          <input type="text" id="new-occupation" name="occupation">
         </div>
+
         <div class="field">
           <label for="weapon">Weapon: </label>
-          <input type="text" name="weapon">
+          <input type="text" id="new-weapon" name="weapon">
         </div>
+
         <div class="field">
           <label for="cartoon">Is a Cartoon: </label>
-          <input name="cartoon" type="checkbox">
+          <input name="cartoon" id="new-cartoon" type="checkbox">
         </div>
         <button id="send-data">Create</button>
+
       </form>
     </section>
+
     <section class="form-container">
       <h2>Edit Character</h2>
       <form id="edit-character-form" class="character-form">
         <div class="field">
           <label for="id">ID: </label>
-          <input type="text" name="chr-id">
+          <input type="text" id="edit-id" name="chr-id">
         </div>
+
         <div class="field">
           <label for="name">Name: </label>
-          <input type="text" name="name">
+          <input type="text" id="edit-name" name="name">
         </div>
+
         <div class="field">
           <label for="occupation">Occupation: </label>
-          <input type="text" name="occupation">
+          <input type="text" id="edit-occupation" name="occupation">
         </div>
+
         <div class="field">
           <label for="weapon">Weapon: </label>
-          <input type="text" name="weapon">
+          <input type="text" id="edit-weapon" name="weapon">
         </div>
+
         <div class="field">
           <label for="cartoon">Is a Cartoon: </label>
-          <input name="cartoon" type="checkbox">
+          <input name="cartoon" id="edit-cartoon" type="checkbox">
         </div>
+
         <button id="send-data">Update</button>
+
       </form>
     </section>
   </section>
+
   <script type="text/javascript" src="./public/javascript/APIHandler.js"></script>
   <script type="text/javascript" src="./public/javascript/index.js"></script>
+
 </body>
 </html>

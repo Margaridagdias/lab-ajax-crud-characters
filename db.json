@@ -1,0 +1,32 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Marga",
+      "occupation": "qwq",
+      "weapon": "qw",
+      "cartoon": false
+    },
+    {
+      "id": 3,
+      "name": "Sponge Bob",
+      "occupation": "Lives under the sea",
+      "weapon": "Crabby Patty",
+      "cartoon": true
+    },
+    {
+      "id": 4,
+      "name": "lila",
+      "occupation": "papa",
+      "weapon": "mama",
+      "cartoon": true
+    },
+    {
+      "name": "pola",
+      "occupation": "mima",
+      "weapon": "baba",
+      "cartoon": true,
+      "id": 5
+    }
+  ]
+}
